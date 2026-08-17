@@ -1,0 +1,17 @@
+SCRIPT PYTHON
+
+Script em Python para escalar (subir/descer réplicas) DeploymentConfigs no OpenShift 3, rodando via CLI (`oc`) a partir
+de um bastion host.
+
+1. Script em Python para escalar (subir/descer réplicas) DeploymentConfigs no OpenShift 3, rodando via CLI (`oc`) a partir de um bastion host.
+2. Escala todos de uma vez para `0` (down) ou `1` (up) 
+
+
+Para rodar o arquivo no bastion precisa
+
+python3 scale_pods.py down |||| para descer os pods
+python3 scale_pods.py up |||| para subir os pods
+(opcional) python3 scale_pods.py up --timeout 180 |||| aumenta pra 180segundos o tempo de espera para o pod ficar pronto
+(opcional) python3 scale_pods.py up --sem-verificar-rollout |||| nao confirma se os pods subiram ou nao 
+
+
