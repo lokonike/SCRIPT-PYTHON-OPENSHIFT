@@ -1,6 +1,6 @@
 SCRIPT PYTHON
 
-Script em Python para escalar (subir/descer réplicas) DeploymentConfigs no OpenShift 3, rodando via CLI (`oc`) a partir
+Script em Python para escalar (subir/descer) DeploymentConfigs no OpenShift 3, rodando via CLI (`oc`) a partir
 de um bastion host.
 
 1. Script em Python para escalar (subir/descer réplicas) DeploymentConfigs no OpenShift 3, rodando via CLI (`oc`) a partir de um bastion host.
